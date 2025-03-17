@@ -6,48 +6,49 @@
     <title>Fragmat Era - Under Construction</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            background: #0a0a0a;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        .container {
-            position: relative;
+        h1 {
+            font-size: 2.5rem;
+            animation: glow 1.5s infinite alternate;
         }
-        .animated-text {
-            font-size: 24px;
-            opacity: 0;
-            animation: fadeIn 2s ease-in-out forwards;
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff9900; }
+            to { text-shadow: 0 0 20px #ffcc00; }
         }
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(-20px); }
-            100% { opacity: 1; transform: translateY(0); }
+        p {
+            font-size: 1.2rem;
+            margin-top: 10px;
         }
-        .loader {
+        .instagram {
             margin-top: 20px;
-            border: 5px solid rgba(255, 255, 255, 0.2);
-            border-top: 5px solid white;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
+            font-size: 1rem;
+            color: #ff9900;
         }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        .instagram a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .instagram a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="animated-text">Sorry for the inconvenience,<br> the website is under construction</h1>
-        <div class="loader"></div>
+    <h1>🚧 Sorry for the inconvenience 🚧</h1>
+    <p>The website is under construction. We'll be back soon!</p>
+    <div class="instagram">
+        📷 For further information Contact us on Instagram: <a href="https://www.instagram.com/fragmat_era" target="_blank">@fragmat_era</a>
     </div>
 </body>
 </html>
